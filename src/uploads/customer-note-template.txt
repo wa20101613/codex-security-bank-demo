@@ -1,0 +1,6 @@
+Fake customer note template.
+
+Customer:
+Issue:
+Resolution:
+Follow-up:
