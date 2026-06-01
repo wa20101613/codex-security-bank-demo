@@ -9,20 +9,14 @@ router.post("/login", (req, res) => {
 
   logSensitiveEvent("login_attempt", {
     username,
-    password,
-    ip: req.ip,
-    headers: req.headers
+    ip: req.ip
   });
 
   const result = login(username, password);
 
   if (!result) {
     return res.status(401).json({
-      error: "Invalid login",
-      debug: {
-        usernameAttempted: username,
-        passwordLength: password ? password.length : 0
-      }
+      error: "Invalid login"
     });
   }
 
