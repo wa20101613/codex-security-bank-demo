@@ -1,0 +1,3 @@
+Fake internal support policy for Codex Security training.
+
+This file contains no real policy information.
